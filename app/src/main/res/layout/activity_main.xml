@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/LinearLayout"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Digite seus Dados"
+            android:textSize="30dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginBottom="20dp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextId"
+            android:visibility="gone"/>
+
+        <EditText
+            android:id="@+id/editTextPeso"
+            android:layout_width="375dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/edittext_shape"
+            android:hint=" Peso (kg)"
+            android:inputType="number"
+            android:padding="15dp"
+
+            />
+
+        <EditText
+            android:id="@+id/editTextData"
+            android:layout_width="375dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/edittext_shape"
+            android:hint=" Data"
+            android:padding="15dp" />
+
+        <EditText
+            android:id="@+id/editTextCircunferencia"
+            android:layout_width="375dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/edittext_shape"
+            android:hint=" Circunferência Abdominal (cm)"
+            android:padding="15dp"
+            android:inputType="number"
+            />
+        <Button
+            android:layout_width="200dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:text="Salvar"
+            android:id="@+id/buttonSalvar"
+            android:background="@drawable/button_androidshape"
+            android:layout_marginTop="20dp"
+            android:textSize="20dp"
+            android:gravity="center"/>
+    </LinearLayout>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ListViewListinha"
+        android:layout_below="@id/LinearLayout">
+
+    </ListView>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        android:id="@+id/BarradeProgresso"/>
+
+</RelativeLayout>
